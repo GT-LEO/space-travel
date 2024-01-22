@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="">
+	<style>
+	body{
+		box-sizing: border-box;
+		overflow-x:hidden ;
+		padding-right: 5%;
+		padding-left: 5%;
+		background: url("./images/home/background-home-mobile.jpg");
+		background-repeat:no-repeat ;
+		background-position: center;
+		background-size: cover;
+	}	
+*, *::before, *::after{
+	box-sizing: border-box;
+}
+.parent{
+	overflow-x: hidden;
+	width: 100vw;
+	height: 100vh;
+	padding-bottom: 1rems;
+
+}
+.hom{
+	display: flex;
+	gap: 10vw;
+	align-items: center;
+}
+
+li{
+	list-style: none;
+}
+header{
+	display: flex;
+	gap: 36vw;
+position: fixed;
+}
+header ul label{
+	color: white;
+	font-weight: 300;
+	line-height: 2rem;
+}
+header ul label:hover{
+border-bottom: 2px solid white;
+}
+header ul label span{
+display: none;
+}
+
+input{
+	display: none;
+}
+a{
+	text-decoration: none;
+}
+
+nav ul{
+	margin-left: -25vw;
+	display: none;
+}
+.crew{
+margin-top: 33vh;
+color: white;
+display: none;
+}
+.technology{
+margin-top: 33vh;
+color: white;
+display: none;
+}
+.destination{
+	color: white;
+margin-top: 33vh;
+	padding-right: 1rem;
+
+}
+.toggle::before{
+	content: "\2630";
+	font-size: 1.4rem;
+	font-weight: 800;
+	color: lavender;
+}
+.toggle:hover, .menu ul label:hover{
+cursor: pointer;
+}
+#check:checked ~ .toggle:before{
+content: "\2715";
+color: white;
+background: red;
+padding: 3px;
+}
+#check:checked ~ ul{
+	display: block;
+	animation-name:animate1;
+	animation-duration: 1s;
+}
+@keyframes animate1{
+	0%{
+		opacity: 0%;
+		margin-top: -4rem;
+	}
+	
+	100%{
+		opacity: 100%;
+		margin-top: 0rem;
+
+	}
+
+}
+.home{
+text-align: center;
+padding-right: 1rem;
+margin-top: 33vh;
+
+}
+.home p{
+color: lavender;
+opacity: 90%;
+font-family: monospace;
+font-size: 1rem;
+}
+ .home h2{
+color: white;
+font-size: 2rem;
+
+ }
+ .home div{
+color: lavender;
+opacity: 90%;
+
+}
+.home button{
+margin-top: 15%;
+height: 7rem;
+width: 7rem;
+border-radius: 3.5rem;
+border: none;
+background: lavender;
+color: black;
+font-weight: 500;
+font-size: 1.1rem;
+font-family: monospace;
+}
+.home button:hover{
+background: red;
+color: lavender;
+}
+.mapper figcaption{
+	padding-right: 0.5rem;
+	opacity: 70%;
+}
+.mapper p span{
+margin-right: 1rem;
+opacity: 70%;
+}
+.mapper p span:hover{
+opacity: 100%;
+border-bottom: 2px solid white;
+padding-bottom: 0.3rem;
+cursor: pointer;
+}
+.mapper h2{
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.distance label{
+display: flex;
+gap: 3rem;
+font-size: 0.8rem;
+opacity: 70%;
+font-family: monospace;
+}
+.distance span{
+display: flex;
+gap:4rem;
+font-size: 1.1rem;
+}
+.distance{
+margin-top: 1rem;
+}
+.thin-line{
+	margin-top: 2rem;
+	height: 1px;
+	width:38vw;
+	background: #aaa;
+}
+.globe-container p{
+font-family: monospace;
+font-size: 1rem;
+
+}
+.globe-container p span{
+opacity: 70%;
+} 
+/*#page2:checked ~ #destination{
+	display: block;
+}
+#page2:checked ~ #home{
+display: none;
+}*/
+.bod1{
+	background: url("./images/home/background-home-mobile.jpg");
+	background-repeat:no-repeat ;
+		background-position: center;
+		background-size: cover;
+}
+.bod2{
+	background: url("./images/destination/background-destination-mobile.jpg");
+	background-repeat:no-repeat ;
+		background-position: center;
+		background-size: cover;
+
+}
+.bod3{
+	background: url("./images/crew/background-crew-mobile.jpg");
+	background-repeat:no-repeat ;
+		background-position: center;
+		background-size: cover;
+
+}
+.bod4{
+	background: url("./images/technology/background-technology-mobile.jpg");
+	background-repeat:no-repeat ;
+		background-position: center;
+		background-size: cover;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width:901px){
+header{
+	display: flex;
+	gap: 20vw;
+}
+header ul{
+	display: flex;
+	gap: 5vw;
+}
+.toggle{
+	display: none;
+}
+/*body{
+	background: url("./images/home/background-home-tablet.jpg");
+		background-repeat:no-repeat ;
+		background-position: center;
+		background-size: cover;
+}*/
+header ul label{
+opacity: 90%;
+}
+header ul label span{
+opacity: 100%;
+}
+.bod1{
+	background: url("./images/home/background-home-tablet.jpg");
+	background-repeat:no-repeat ;
+		background-position: center;
+		background-size: cover;
+}
+.bod2{
+	background: url("./images/destination/background-destination-tablet.jpg");
+	background-repeat:no-repeat ;
+		background-position: center;
+		background-size: cover;
+
+}
+.bod3{
+	background: url("./images/crew/background-crew-tablet.jpg");
+	background-repeat:no-repeat ;
+		background-position: center;
+		background-size: cover;
+
+}
+.bod4{
+	background: url("./images/technology/background-technology-tablet.jpg");
+	background-repeat:no-repeat ;
+		background-position: center;
+		background-size: cover;
+
+}
+}
+
+@media(min-width:1100px){
+header{
+	gap: 25vw;
+	align-items: center;
+}
+
+header ul label span{
+display: inline-block;
+font-weight: 600;
+}
+.line{
+height: 2px;
+width: 10vw;
+background: #aaa;
+}
+header ul{
+	gap: 4vw;
+}
+/*body{
+	background: url("./images/home/background-home-desktop.jpg");
+		background-repeat:no-repeat ;
+		background-position: center;
+		background-size: cover;
+}
+*/
+.bod1{
+	background: url("./images/home/background-home-desktop.jpg");
+	background-repeat:no-repeat ;
+		background-position: center;
+		background-size: cover;
+}
+.bod2{
+	background: url("./images/destination/background-destination-desktop.jpg");
+	background-repeat:no-repeat ;
+		background-position: center;
+		background-size: cover;
+
+}
+.bod3{
+	background: url("./images/crew/background-crew-desktop.jpg");
+	background-repeat:no-repeat ;
+		background-position: center;
+		background-size: cover;
+
+}
+.bod4{
+	background: url("./images/technology/background-technology-desktop.jpg");
+	background-repeat:no-repeat ;
+		background-position: center;
+		background-size: cover;
+
+}
+.home{
+	display: flex;
+	gap: 10vw;
+	align-items: center;
+}
+
+.destination{
+	display: flex;
+	gap: 5%;
+	align-items: center;
+
+}
+
+
+
+}
+
+
+	</style>
+</head>
+<body>
+<div class="parent">
+
+<header>
+	<div class="logo">
+		<img src="./images/logo.svg">
+	</div>
+
+	<div class="line"></div>
+
+	<nav class="menu">
+		<form>
+		<input type="checkbox" id="check">
+		<label class="toggle" for="check"></label>
+<ul>
+	<div>
+		<label class="click1">
+			<span>00</span> HOME
+		</label>
+	</div>
+	<div>
+		<label class="click2">
+			<span>01</span> DESTINATION
+		</label>
+	</div>
+	<div>
+		<label class="click3">
+			<span>02</span> CREW
+		</label>
+	</div>
+	<div>
+		<label class="click4">
+			<span>03</span> TECHNOLOGY
+		</label>
+	</div>
+	
+	
+</ul>
+</form>
+	</nav>
+</header>
+
+<main>
+		<input type="checkbox" id="page1">
+	<section class="home" id="home">
+
+		<aside>
+		<p>
+			SO, YOU WANT TO TRAVEL TO
+		</p>
+		<h2>SPACE</h2>
+		<div>
+			Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. <br> Well sit back, and relax because we'will give you a truly out of this world experience!
+		</div>
+		</aside>
+		<button>EXPLORE</button>
+	</section>
+
+		<input type="checkbox" id="page2">
+	<section class="destination" id="destination" style="display: none;">
+<aside class="globe-container">
+	<p>
+		<span>01</span> PICK YOUR DESTINATION
+	</p>
+<img src="./images/destination/image-mars.png">
+</aside>
+
+<div class="mapper">
+	<p>
+		<span>MOON</span>
+		<span>MARS</span>
+		<span>EUROPA</span>
+		<span>TITANS</span>
+	</p>
+	<h2>MARS</h2>
+	<figcaption>
+	Don't forget to pack your hiking boots. You'll need them to tackle Olympics Mons, the tallest planetary mountain in our solar system. It's two and half times the size of Everest!	
+	</figcaption>
+	<div class="thin-line"></div>
+	<div class="distance">
+		<label>
+			<li>AVG. DISTANCE</li>
+			<li>EST. TRAVEL TIME</li>
+		</label>
+		<span>
+			<li>225 MIL. KM</li>
+			<li>9 MONTHS</li>
+			
+		</span>
+	</div>
+</div>
+	</section>
+
+		<input type="checkbox" id="page3">
+	<section class="crew">
+			Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. <br> Well sit back, and relax because we'will give you a truly out of this world experience!
+			Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. <br> Well sit back, and relax because we'will give you a truly out of this world experience!
+			Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. <br> Well sit back, and relax because we'will give you a truly out of this world experience!
+			Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. <br> Well sit back, and relax because we'will give you a truly out of this world experience!
+			Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. <br> Well sit back, and relax because we'will give you a truly out of this world experience!
+			Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. <br> Well sit back, and relax because we'will give you a truly out of this world experience!
+			Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. <br> Well sit back, and relax because we'will give you a truly out of this world experience!
+		
+	</section>
+
+
+		<input type="checkbox" id="page4">
+	<section class="technology">
+			Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. <br> Well sit back, and relax because we'will give you a truly out of this world experience!
+			Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. <br> Well sit back, and relax because we'will give you a truly out of this world experience!
+			Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. <br> Well sit back, and relax because we'will give you a truly out of this world experience!
+			Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. <br> Well sit back, and relax because we'will give you a truly out of this world experience!
+			Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. <br> Well sit back, and relax because we'will give you a truly out of this world experience!
+			Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. <br> Well sit back, and relax because we'will give you a truly out of this world experience!
+			Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. <br> Well sit back, and relax because we'will give you a truly out of this world experience!
+		
+	</section>
+
+
+</main>
+
+<footer>
+	<a href=""> <img src=""> </a>
+	<a href=""> <img src=""> </a>
+	<a href=""> <img src=""> </a>
+	<a href=""> <img src=""> </a>
+</footer>
+
+</div>
+
+
+<script>
+	// function display(){
+		let body = document.querySelector("body");
+	let home = document.querySelector(".home");
+	let crew = document.querySelector(".crew");
+	let technology = document.querySelector(".technology");
+	let destination = document.querySelector(".destination");
+	let page1 = document.querySelector("#page1");
+	let page2 = document.querySelector("#page2");
+	let page3 = document.querySelector("#page3");
+	let page4 = document.querySelector("#page4");
+
+	let click1 = document.querySelector(".click1");
+	let click2 = document.querySelector(".click2");
+	let click3 = document.querySelector(".click3");
+	let click4 = document.querySelector(".click4");
+click1.addEventListener("click", handleClick1);
+ function handleClick1(){
+home.style.display = "inline-block";
+destination.style.display = "none";
+crew.style.display = "none";
+technology.style.display = "none";
+ body.classList.remove("bod2");
+ body.classList.remove("bod3");
+ body.classList.remove("bod4");
+ body.classList.add("bod1");
+if(window.innerWidth >= 1100){
+home.style.display = "flex";
+home.style.paddingRight = "2rem";
+home.style.gap = "5vw";
+home.style.alignItems = "center";
+
+	}
+	
+
+/*window.addEventListener("resize",widthChange);
+function widthChange(){
+	if(window.innerWidth > "900px" ){
+home.style.display = "flex";
+home.style.gap = "10vw";
+home.style.alignItems = "center";
+
+	}
+}*/
+};
+
+
+click2.addEventListener("click", handleClick2);
+ function handleClick2(){
+ 	home.style.display = "none";
+crew.style.display = "none";
+technology.style.display = "none";
+destination.style.display = "block"
+body.classList.add("bod2");
+body.classList.remove("bod1");
+ body.classList.remove("bod3");
+ body.classList.remove("bod4");
+
+if(window.innerWidth >= 1100){
+destination.style.display = "flex";
+destination.style.paddingRight = "2rem";
+destination.style.gap = "5vw";
+destination.style.alignItems = "center";
+
+}
+ };
+
+click3.addEventListener("click", handleClick3); 
+function handleClick3(){
+	home.style.display = "none";
+crew.style.display = "block";
+technology.style.display = "none";
+destination.style.display = "none";
+body.classList.add("bod3");
+body.classList.remove("bod2");
+ body.classList.remove("bod1");
+ body.classList.remove("bod4");
+
+
+if(window.innerWidth >= 1100){
+
+
+		}
+};
+
+click4.addEventListener("click", handleClick4); 
+function handleClick4(){
+	home.style.display = "none";
+crew.style.display = "none";
+technology.style.display = "block";
+destination.style.display = "none";
+body.classList.add("bod4");
+body.classList.remove("bod2");
+ body.classList.remove("bod3");
+ body.classList.remove("bod1");
+
+
+if(window.innerWidth >= 1100){
+
+
+}
+}; 
+
+	 
+</script>
+</body>
+</html>
