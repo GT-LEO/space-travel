@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
 	<style>
 	body{
 		box-sizing: border-box;
@@ -274,6 +274,49 @@ opacity: 100%;
 	height: 60vw;
 	width: 60vw;
 }
+.align2 img{
+height: 60vw;
+	width: 60vw;	
+}
+.space-launch{
+	font-family: monospace;
+	font-size: 1.1rem;
+}
+.space-launch span{
+	opacity:60% ;
+}
+.one{
+height: 4rem;
+width: 4rem;
+border-radius: 2rem;
+background: white;
+color: black;
+text-align: center;
+line-height: 4rem;
+
+}
+.two, .three{
+height: 4rem;
+width: 4rem;
+border-radius: 2rem;
+border: 1px solid #666;
+text-align: center;
+line-height: 4rem;
+}
+.flexer2 p{
+	font-family: monospace;
+	font-size: 0.9rem;
+	opacity: 70%;
+}
+.flexer1{
+display: flex;
+gap: 4vw;
+}
+.flexer2 div{
+	opacity: 80%;
+}
+
+
 
 
 
@@ -334,6 +377,10 @@ opacity: 100%;
 header{
 	gap: 25vw;
 	align-items: center;
+}
+.align2 img{
+height: 40vw;
+	width: 40vw;	
 }
 
 header ul label span{
@@ -523,14 +570,33 @@ header ul{
 
 		<input type="checkbox" id="page4">
 	<section class="technology">
-			Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. <br> Well sit back, and relax because we'will give you a truly out of this world experience!
-			Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. <br> Well sit back, and relax because we'will give you a truly out of this world experience!
-			Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. <br> Well sit back, and relax because we'will give you a truly out of this world experience!
-			Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. <br> Well sit back, and relax because we'will give you a truly out of this world experience!
-			Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. <br> Well sit back, and relax because we'will give you a truly out of this world experience!
-			Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. <br> Well sit back, and relax because we'will give you a truly out of this world experience!
-			Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. <br> Well sit back, and relax because we'will give you a truly out of this world experience!
-		
+		<p class="space-launch">
+			<span>03</span> SPACE LAUNCH 101
+		</p>
+			<div class="align2">
+			<aside>
+			<div class="flexer1">
+				<div>
+			 <p class="one">1</p>
+				<p class="two">2</p>
+				<p class="three">3</p> 
+</div>
+
+			  <div class="flexer2">
+			  	<p>THE TERMINOLOGY...</p>
+			  	<h2>LAUNCH VEHICLE</h2>
+			  	<div>
+			  		A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 meters tall, its quite an awe-inspiring sight on the launch pad!s
+			  	</div>
+			  </div> 
+			</div>
+
+			
+				
+			</aside>	
+
+<img src="./images/technology/image-launch-vehicle-portrait.jpg">
+			</div>
 	</section>
 
 
@@ -648,6 +714,8 @@ body.classList.remove("bod2");
 
 
 if(window.innerWidth >= 1100){
+document.querySelector(".align2").style.display = "flex";
+document.querySelector(".align2").style.gap = "5vw";
 
 
 }
